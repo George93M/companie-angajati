@@ -3,8 +3,19 @@ public class Productie extends Departament implements Evaluator {
     //nume='Productie'
 //nivelComp=3
 
+
+    public Productie() {
+        super("Productie", 3);
+    }
+
     public StatusCandidat evalueaza(Candidat candidat) {
-       //to be implements
-        return StatusCandidat.ACCEPTAT;
+        if (candidat.getNivelDeComp() > super.getNivelMinimDeCompetente()) {
+            return StatusCandidat.ACCEPTAT;
+        } else if (candidat.getNivelDeComp() < super.getNivelMinimDeCompetente()) {
+            return StatusCandidat.RESPINS;
+        } else {
+            return StatusCandidat.IN_ASTEPTARE;
+        }
     }
 }
+

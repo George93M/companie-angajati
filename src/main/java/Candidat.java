@@ -3,6 +3,26 @@ public class Candidat {
     private String pren;
    private  int nivelDeComp;
    private String numeDepartament;
+   private StatusCandidat statusCandidat;
+
+    public Candidat() {
+    }
+
+    public Candidat(String nume, String pren, int nivelDeComp, String numeDepartament) {
+        this.nume = nume;
+        this.pren = pren;
+        this.nivelDeComp = nivelDeComp;
+        this.numeDepartament = numeDepartament;
+        this.statusCandidat = StatusCandidat.IN_ASTEPTARE;
+    }
+
+    public StatusCandidat getStatusCandidat() {
+        return statusCandidat;
+    }
+
+    public void setStatusCandidat(StatusCandidat statusCandidat) {
+        this.statusCandidat = statusCandidat;
+    }
 
     public String getNume() {
         return nume;
