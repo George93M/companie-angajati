@@ -16,6 +16,8 @@ public class Candidat {
         this.statusCandidat = StatusCandidat.IN_ASTEPTARE;
     }
 
+
+
     public StatusCandidat getStatusCandidat() {
         return statusCandidat;
     }

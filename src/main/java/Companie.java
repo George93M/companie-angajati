@@ -8,10 +8,9 @@ public class Companie {
 
 
 
-    public Companie(String numeComp, List<Candidat> angajati, List<Departament> departamente) {
+    public Companie(String numeComp) {
         NumeComp = numeComp;
-        this.angajati = angajati;
-        this.departamente = departamente;
+
     }
 
     public List<Departament> getDepartamente() {
